@@ -1,7 +1,7 @@
 document.write("<h1>Legal and Illegal Variables Names</h1>");
 //1. Declare 3 variables in one statement. 
 
-var firstName = "Ash"; id = 1234; trade = "web development";
+var firstName = "Ash", id = 1234 , trade = "web development";
 
 //2. Declare 5 legal & 5 illegal variable names. 
 
