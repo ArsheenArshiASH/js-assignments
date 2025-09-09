@@ -144,3 +144,24 @@ e. Net Amount Payable (within Due Date)
 f. Late Payment Surcharge 
 g. Gross Amount Payable (after Due Date) 
 Where,  */
+
+document.write(`<h2>Question no 14</h2>`);
+
+var customerName = prompt(`Enter your name` , `Unknown`);
+var currentMonths=["January","February","March","April","May","Jun","July","August","September","October","November","December"];
+var currentMonthNumber = new Date().getMonth();
+var currentMonth = currentMonths[currentMonthNumber];
+var units = 410 ;
+var chargesPerUnit = 16.12;
+var netAmount = Number((units*chargesPerUnit).toFixed(2));
+var latePayment= 350 ;
+var grossAmount = netAmount+ latePayment;
+document.writeln(`<div style= "border:2px solid grey ; max-width: 550px ; border-radius: 20px ; padding: 0 15px"> <div>`)
+document.write(`<h2 style = "font-size: 2rem">K-Electric Bill</h2>`);
+document.writeln(`Customer Name : <b>${customerName}</b> <br /> <br />`);
+document.writeln(`Month : <b>${currentMonth}</b> <br /> <br />`);
+document.writeln(`Number Of Units : <b>${units}</b> <br /> <br />`);
+document.writeln(`Charges per Unit : <b>${chargesPerUnit}</b> <br /> <br /> <br />`);
+document.writeln(`Net Amount Payable (within Due Date) : <b>${netAmount}</b> <br /> <br />`);
+document.writeln(`Late Payment Surcharge : <b>${latePayment}</b> <br /> <br />`);
+document.writeln(`Gross Amount Payable (after Due Date) : <b>${grossAmount}</b> <br /> <br />`);
